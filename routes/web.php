@@ -10,3 +10,4 @@ Route::view('/contacto', 'contacto')->name('contacto');
 
 // Rutas para el CRUD de persona
 Route::resource('persona', PersonaController::class);
+Route::get('/personas', [PersonaController::class, 'index'])->name('personas.index');
